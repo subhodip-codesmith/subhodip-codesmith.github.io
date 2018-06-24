@@ -59,14 +59,124 @@
               <span>View Club Details</span>
             </a>
 
-            <a href="#!"
-               target="_blank"
-               class="btn btn-danger text-secondary btn-sm m-2">
-              <span>Add Your club information</span>
-            </a>
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-danger btn-sm m-2 text-secondary btn-ht-dl-message" data-toggle="modal" data-target="#exampleModalCenter">
+  Add Club Details
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Club Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="" action="#" method="post">
+          <div class="form-group">
+          <input class="form-control" type="text" placeholder="Name of the Club" id="clubName" required>
+        </div>
+        <div class="form-group">
+        <textarea class="form-control" id="clubAdress" rows="3" placeholder="Enter your club address here" required></textarea>
+      </div>
+      <div class="form-group">
+      <input class="form-control" type="number" onKeyPress="if(this.value.length==10) return false;" placeholder="Club's contact Number please" id="clubContact" required>
+    </div>
+    <div class="form-group">
+    <input class="form-control" type="url" placeholder="Enter your Facebook Page Link" id="clubFacebookPageURL">
+  </div>
+        <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter Club email id">
+        <small id="emailHelp" class="form-text text-muted">All Information will be shared to this email</small>
+      </div>
+      <div class="form-group">
+      <input class="form-control" type="text" placeholder="Presidents name" id="clubPresidentName" required>
+    </div>
+    <div class="form-group">
+    <input class="form-control" type="text" placeholder="Secretaries name" id="clubSecretaryName" required>
+  </div>
+  <div class="form-group">
+  <textarea class="form-control" id="clubDesc" rows="3" placeholder="Enter a description for your club. It can be your club theme,what makes your club so special, your focus area etc." required></textarea>
+</div>
+<div class="form-group">
+<input class="form-control" type="number" min="1950" max="2019" onKeyPress="if(this.value.length==4) return false;" placeholder="Club's Year of Estabilishment" id="clubYear" required>
+</div>
+<div class="form-group">
+<input class="form-control" type="text" placeholder="Parent Rotary Club Name" id="parentRotaryName" required>
+</div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-success">Save changes</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="container">
+      <table class="table table-hover table-striped">
+  <thead class="bg-danger">
+    <tr>
+      <th>#</th>
+      <th >Club Name</th>
+      <th>Presidents Name</th>
+      <th>Club Email</th>
+      <th>Club Contact</th>
+      <th>Club Facebook Page</th>
+      <th>Club Description</th>
+      <th>Where they meet</th>
+      <th>Year of Estabilishment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Rotract Serampore</td>
+      <td>Pradosh Mitra</td>
+      <td>paglachulkene@gmail.com</td>
+      <td>9876543210</td>
+      <td>https://fb.com/RotaractSerampore</td>
+      <td>Power to all</td>
+      <td>Serampore Rai Ghat</td>
+      <td>2012</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <tr>
+      <th scope="row">3</th>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+  </tbody>
+</table>
     </div>
   <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
