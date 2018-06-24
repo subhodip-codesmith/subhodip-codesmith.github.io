@@ -89,8 +89,18 @@
       <input class="form-control" type="number" onKeyPress="if(this.value.length==10) return false;" placeholder="Contact Number of Event Chair" id="ClubEventChairContact" required>
     </div>
     <div class="form-group">
+    <div class="custom-file">
+    <input type="file" class="custom-file-input" id="clubEventPoster">
+    <label class="custom-file-label" for="clubEventPoster">Upload Poster images of the event</label>
+  </div>
+</div>
+    <div class="form-group">
     <input class="form-control" type="url" placeholder="Event Facebook Link" id="clubEventFacebookURL">
   </div>
+  <div class="custom-file">
+  <input type="file" class="custom-file-input" id="clubEventImages">
+  <label class="custom-file-label" for="clubEventImages">Upload 2-3 images of the event</label>
+</div>
   <div class="form-group">
   <input class="form-control" type="url" placeholder="Google Drive/Facebook album Link" id="clubEventalbumURL">
 </div>
